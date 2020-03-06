@@ -1,0 +1,90 @@
+.Login{
+    background-color: #fff;
+    min-height: 381px;
+    width: 400px;
+    margin: 40px auto;
+  }
+  
+  .header{
+    text-align: center;
+    background: #1abc9c;
+    height: 40px;
+    color:white;
+  
+  }
+  
+  .Login input{
+    background-color: #fff;
+    border: 10;
+    width: 200px;
+    height: 35px;
+    padding: 0 20 px;
+    margin: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    color:black;
+  }
+  
+  .Login label{
+    font-size: 18px;
+    color: #1abc9c;
+    
+  }
+  
+  .Login input::placeholder{
+    color: black;
+  }
+  .Login input:focus{
+    outline: none;
+  }
+  
+  .Login .button-1{
+    height: 39px;
+    width: 102px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1abc9c;
+    cursor: pointer;
+    font-weight:bolder;
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+  
+  .Login .button-2{
+    height: 39px;
+    width: 102px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1abc9c;
+    cursor: pointer;
+    font-weight:bolder;
+    color: #fff;
+    margin-left: 102px;
+    margin-top: 40px;
+  }
+  
+  #login-form button.button-1{
+    height: 50px;
+    width: 80px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1abc9c;
+    cursor: pointer;
+    font-weight:bolder;
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+  #login-form button.button-2{
+    height: 50px;
+    width: 80px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1abc9c;
+    cursor: pointer;
+    font-weight:bolder;
+    color: #fff;
+    margin-left: 131px;
+    margin-top: 40px;
+  }

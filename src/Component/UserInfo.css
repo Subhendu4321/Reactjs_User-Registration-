@@ -1,0 +1,53 @@
+.UserInfo{
+    background-color: #fff;
+    min-height: 381px;
+    width: 400px;
+    margin: 40px auto;
+  }
+  
+  .Header{
+    text-align: center;
+    background: #1abc9c;
+    height: 40px;
+    color:white;
+  
+  }
+  
+  .UserInfo input{
+    background-color: #fff;
+    border: 10;
+    width: 200px;
+    height: 35px;
+    padding: 0 20 px;
+    margin: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    color:black;
+  }
+  
+  .UserInfo label{
+    font-size: 18px;
+    color: #1abc9c;
+    
+  }
+  
+  .UserInfo input::placeholder{
+    color: #fff;
+  }
+  .UserInfo input:focus{
+    outline: none;
+  }
+
+  .UserInfo button{
+    height: 39px;
+    width: 102px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1abc9c;
+    cursor: pointer;
+    font-weight:bolder;
+    color: #fff;
+    margin-left: 137px;
+    margin-top: 40px;
+    margin-bottom: 34px
+  }
