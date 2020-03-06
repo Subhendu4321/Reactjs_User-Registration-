@@ -1,6 +1,21 @@
 import React,{Component} from 'react';
 import './Login.css';
 import { Link,withRouter } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardHeader from '@material-ui/core/CardHeader';
+import TextField from '@material-ui/core/TextField';
+import { withStyles } from '@material-ui/core/styles';
+
+
+const styles = theme => ({
+  button: {
+   margin:'10px'
+  }
+
+});
 
 class Login extends Component{
     constructor(props){
@@ -47,30 +62,37 @@ class Login extends Component{
     }
     render(){
       console.log(this.props)
+      const { classes } = this.props;
       console.log(this.state.password)
       return(
-        <div className="Login">
-          <div className="header">
-            <h4>Login Page</h4>
-          </div>
-        
-            <label>User id</label>
-            <input type="text" placeholder="Enter Email Id"
-            value = {this.state.userName}
-            onChange={this.handleUserName}></input><br />
-            <label>Password</label>
-            <input type="password" placeholder="Enter Password"
-            value = {this.state.password}
-            onChange={this.handlePassword}></input><br />
-            <button className="button-1" type="submit" onClick={this.verifyUser}>Login</button>
-            <button className="button-2" type="submit" onClick={this.doRegister}>Register</button>
+        <Card className="Login">
+          <CardHeader className="header" title="Login Page" titleTypographyProps="Login Page">
             
-            {/* <RoutingExample /> */}
+          </CardHeader>
+        
+          <CardContent className="cardContent">
+            <TextField id="user_id" label="User Id" variant="outlined" color="primary" className="userid" style={{padding:9}} value = {this.state.userName} onChange={this.handleUserName}/>
+            <TextField type="password" id="password" label="Password" variant="outlined" color="primary" className="password"style={{padding:9}} value = {this.state.password} onChange={this.handlePassword}/>
+            {/* <label>User id</label>
+              <input type="text" placeholder="Enter Email Id"
+              value = {this.state.userName}
+              onChange={this.handleUserName}></input><br /> */}
+              {/* <label>Password</label>
+              <input type="password" placeholder="Enter Password"
+              value = {this.state.password}
+              onChange={this.handlePassword}></input><br /> */}
+              <div className="buttonClass">
+                <Button variant="contained" color="primary" className={classes.button} type="submit" onClick={this.verifyUser } style={{padding:9}}>Login</Button>
+                <Button variant="contained" color="primary" className={classes.button} type="submit" onClick={this.doRegister} style={{padding:9}}>Register</Button>
+              </div>
+              
+              {/* <RoutingExample /> */}
+          </CardContent>
   
-        </div>
+        </Card>
       )
     }
   
   }
   
-  export default withRouter(Login);
+  export default withStyles(styles)(withRouter(Login));

@@ -12,7 +12,7 @@
     color:white;
   
   }
-  
+/*   
   .Login input{
     background-color: #fff;
     border: 10;
@@ -23,22 +23,22 @@
     font-size: 15px;
     border-radius: 10px;
     color:black;
-  }
-  
+  } */
+/*   
   .Login label{
     font-size: 18px;
     color: #1abc9c;
     
-  }
+  } */
   
-  .Login input::placeholder{
+  /* .Login input::placeholder{
     color: black;
   }
   .Login input:focus{
     outline: none;
   }
-  
-  .Login .button-1{
+   */
+  /* .Login .button-1{
     height: 39px;
     width: 102px;
     border-radius: 5px;
@@ -49,22 +49,22 @@
     color: #fff;
     margin-left: 50px;
     margin-top: 40px;
-  }
+  } */
   
-  .Login .button-2{
+  /* .Login .button-2{
     height: 39px;
     width: 102px;
     border-radius: 5px;
     border: 0;
-    background-color: #1abc9c;
-    cursor: pointer;
+    /* background-color: #1abc9c; */
+    /* cursor: pointer;
     font-weight:bolder;
     color: #fff;
     margin-left: 102px;
     margin-top: 40px;
-  }
+  } */ */
   
-  #login-form button.button-1{
+  /* #login-form button.button-1{
     height: 50px;
     width: 80px;
     border-radius: 5px;
@@ -85,6 +85,32 @@
     cursor: pointer;
     font-weight:bolder;
     color: #fff;
-    margin-left: 131px;
-    margin-top: 40px;
+    /* margin-left: 131px;
+    margin-top: 40px; */
+    /* justify-content: center;
+  } */ */
+
+  .userid{
+    padding: 9px;
+    justify-content: center;
   }
+  .password{
+    /* padding-bottom: 10px; */
+    justify-content: center;
+  }
+
+  .cardContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .buttonClass{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .button_1{
+    padding: 9px;
+  }
+  
