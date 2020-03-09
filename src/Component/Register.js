@@ -98,7 +98,7 @@ class Register extends Component{
     }
 
     doBack(){
-        this.props.history.push("./login")
+        this.props.history.push("./")
     }
 
     render(){
@@ -130,8 +130,8 @@ class Register extends Component{
                     onChange={this.handleConfirmPassword}/>
 
                     <div className="buttonClass">
-                        <Button variant="contained" color="primary" className={classes.button} type="submit" onClick={this.verifyUser } style={{padding:9}} onClick={this.doRegister}>Register</Button>
-                        <Button variant="contained" color="primary" className={classes.button} type="submit" onClick={this.doRegister} style={{padding:9}} onClick={this.doBack}>Back</Button>
+                        <Button variant="contained" color="primary" className={classes.button} type="submit" style={{padding:9}} onClick={this.doRegister}>Register</Button>
+                        <Button variant="contained" color="primary" className={classes.button} type="submit" style={{padding:9}} onClick={this.doBack}>Back</Button>
                     </div>
 
 
